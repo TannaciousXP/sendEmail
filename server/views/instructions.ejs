@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Send Email</title>
+  </head>
+
+  <style>
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <h3>To Send Email: send POST request to https://pxtan-sendemail.herokuapp.com/sendEmail</h3>
+      <p>headers: { content-type: application/json }</p>
+      <p>body: { to: "myemail@example.com", subject: “hello”, body: “world” }</p>
+    </div>
+  </body>
+
+</html>
