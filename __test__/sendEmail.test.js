@@ -26,4 +26,23 @@ describe('Test bad calls', () => {
 
     rp(newOpts).then(res => expect(res).toMatchSnapshot());
   });
+  
+  it(`JSON.body has no 'subject' property`, () => {
+    let newData = Object.assign({}, postData);
+    let newOpts = Object.assign({}, options);
+    delete newData.subject;
+    newOpts.options = newData;
+
+    rp(newOpts).then(res => expect(res).toMatchSnapshot());
+  });
+
+  it(`JSON.body has no 'body' property`, () => {
+    let newData = Object.assign({}, postData);
+    let newOpts = Object.assign({}, options);
+    delete newData.body;
+    newOpts.options = newData;
+
+    rp(newOpts).then(res => expect(res).toMatchSnapshot());
+  });
+
 });
