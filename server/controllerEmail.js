@@ -37,17 +37,17 @@ module.exports = (req, res) => {
   //   }
   // );
 
-  // transporter with OAUTH
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      type: 'OAuth2',
-      user: gmailConfig.user,
-      clientId: gmailConfig.clientId,
-      clientSecret: gmailConfig.clientSecret,
-      refreshToken: gmailConfig.refreshToken
-    }
-  });
+  // // transporter with OAUTH
+  // const transporter = nodemailer.createTransport({
+  //   service: 'gmail',
+  //   auth: {
+  //     type: 'OAuth2',
+  //     user: gmailConfig.user,
+  //     clientId: gmailConfig.clientId,
+  //     clientSecret: gmailConfig.clientSecret,
+  //     refreshToken: gmailConfig.refreshToken
+  //   }
+  // });
 
   let message = {
     from: `Peter Tan <${gmailConfig.user}>`,
