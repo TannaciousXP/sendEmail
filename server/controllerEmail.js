@@ -10,13 +10,13 @@ module.exports = (req, res) => {
     return res.status(404).send(console.log('Error: content-type needs to be application/json'));
   }
   if (!reqBody.hasOwnProperty('to')) {
-    return res.status(404).send(console.log('Error: no to info'));
+    return res.status(404).send(console.log(`Error: no 'to' property`));
   }
   if (!reqBody.hasOwnProperty('subject')) {
-    return res.status(404).send(console.log('Error: no subject info'));
+    return res.status(404).send(console.log(`Error: no 'subject' property`));
   }
   if (!reqBody.hasOwnProperty('body')) {
-    return res.status(404).send(console.log('Error: no body info'));
+    return res.status(404).send(console.log(`Error: no 'body' property`));
   }
 
   console.log('Credentials obtained, sending message');
