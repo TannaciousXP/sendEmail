@@ -35,8 +35,8 @@ There are two ways to make the API call, with and without OAuth2
   "user": "no OAuth2",
   "pass": "no OAuth2",
   "clientId": "with OAuth2",
-  "clientSecret": "with OAuth",
-  "refreshToken": "with OAuth"
+  "clientSecret": "with OAuth2",
+  "refreshToken": "with OAuth2"
 }
 ```
 
