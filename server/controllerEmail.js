@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 const gmailConfig = require('../config/gmail.json');
 
-modue.exports = (req, res) => {
+module.exports = (req, res) => {
   let reqBody = req.body;
   let contentType = req.headers['content-type'].toLowerCase();
 
@@ -56,7 +56,7 @@ modue.exports = (req, res) => {
     text: reqBody.body
   };
 
-  transporter.sendMail(messsage, (err, info) => {
+  transporter.sendMail(message, (err, info) => {
     if (err) {
       return res.status(404).end(console.log(err));
     }
