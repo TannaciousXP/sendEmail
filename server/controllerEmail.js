@@ -62,6 +62,6 @@ module.exports = (req, res) => {
     }
     console.log('Message sent successfully');
     console.log(info);
-    res.status(250).send('Message sent successfully!');
+    res.status(200).send('Message sent successfully!');
   });
 };
