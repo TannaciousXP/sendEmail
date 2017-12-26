@@ -1,0 +1,29 @@
+{
+  "name": "sendEmail",
+  "version": "1.0.0",
+  "description": "Entelo Challenge",
+  "main": "index.js",
+  "repository": "https://github.com/TannaciousXP/sendEmail.git",
+  "author": "Peter Tan <pxhtan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.4",
+    "jest": "^22.0.4"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
