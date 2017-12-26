@@ -1,6 +1,6 @@
 # sendEmail
 
-Receive a JSON.body with the following format: { to: "myemail@example.com", subject: “hello”, body: “world” }, then use nodemailer API to send the email
+Receive a JSON.body with the following format: { to: "myemail@example.com", subject: “hello”, body: “world” }, then use nodemailer API to send an email
 
 hosted on [heroku](https://pxt-sendemail.herokuapp.com/), view page for instructions
 
@@ -59,7 +59,7 @@ With OAuth: follow the [video](https://www.youtube.com/watch?v=hfWe1gPCnzc) to g
 }
 ```
 
-After you make your gmail.json file inside **controllerEmail.js** line 24 - 50 will have two transporter __**uncomment for appropriate OAuth**__.
+After you make your gmail.json file, inside **controllerEmail.js** line 24 - 50 will have two transporter, __**uncomment for appropriate OAuth**__.
 
 ### Inside Terminal
 
@@ -79,7 +79,7 @@ $ git push heroku master
 $ heroku open
 ```
 
-Now you can replace **https://pxtan-sendemail.herokuapp.com**/sendEmail with **<your heroku URL>**/sendEmail
+Now you can replace https://pxtan-sendemail.herokuapp.com/sendEmail with **your heroku URL**/sendEmail
 
 ## Testing
 
